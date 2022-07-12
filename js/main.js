@@ -15,7 +15,7 @@ function pregAndProm () {
 
 let entrada;
 // se repite hasta que el usuario no quiera ingresar mas alumnos y sus notas
-while ((entrada != "esc") && (entrada != "ESC") && (entrada != "Esc")) {
+while ((entrada != "esc") || (entrada != "ESC") || (entrada != "Esc")) {
     let alumno = prompt("Nombre y apellido del alumno");
     let materia = prompt("¿Que materia es?");
     // ejecuto la funcion de pedir notas y promediarlas
